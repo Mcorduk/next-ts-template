@@ -6,10 +6,7 @@ interface NavbarElementProps {
   href: string
 }
 
-export const NavbarElement: React.FC<NavbarElementProps> = ({
-  label,
-  href
-}) => {
+export const NavbarElement: React.FC<NavbarElementProps> = ({ label, href = '/' }) => {
   return (
     <Link
       href={href}
